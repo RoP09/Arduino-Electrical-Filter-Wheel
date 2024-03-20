@@ -384,10 +384,10 @@ void setup()
 
 void loop()
 {                                        // runs forever.
-  //upButtonState = digitalRead(upButton); // read button pins and save state
-  //downButtonState = digitalRead(downButton);
+  upButtonState = digitalRead(upButton); // read button pins and save state
+  downButtonState = digitalRead(downButton);
 
-/*  if (upButtonState == LOW && currPos < numberOfFilters)
+  if (upButtonState == LOW && currPos < numberOfFilters)
   { // if up button pressed and position is less than number of filters increment position
     goToLocation(currPos + 1);
     sendSerial("P" + String(currPos));
@@ -398,14 +398,7 @@ void loop()
     goToLocation(currPos - 1);
     sendSerial("P" + String(currPos));
     delay(150); // debounce time
-  }*/
-    //pinMode(SENSOR, INPUT);
-     //digitalWrite(hallPower, HIGH);
-   //  delay(1);
-  // Serial.println(analogRead(SENSOR));
-  //digitalWrite(hallPower, LOW);
-   //pinMode(SENSOR, OUTPUT);
-    //digitalWrite(SENSOR,LOW);
+  }
 
   if (Serial.available() > 0)
   {               // if at least one byte in serial in buffer.
