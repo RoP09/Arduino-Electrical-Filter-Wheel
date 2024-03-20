@@ -4,3 +4,4 @@ A motorised filter wheel control SW. The wheel is motorised with a 28BYJ-48 step
 Originally forked from https://github.com/Blueshawk/Rayz-indi-wheel 
 
 Further optimized the code for more precision and reliability and made it compatible with different hall sensor type which requires resetting on each trigger.
+Added PlatformIO support.
